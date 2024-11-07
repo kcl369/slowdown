@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slow Down - Full Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.69/dist/shoelace.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.69/dist/shoelace.css">
+</head>
+<body>
+    <!-- Scroll Indicator Button -->
+    <div class="scroll-indicator" id="scroll-btn">
+        <span>&#9660;</span>
+    </div>
+
+    <!-- Introduction Section -->
+    <section id="introduction" class="container">
+        <nav class="navbar">
+            <sl-button type="text" href="#research" class="nav-link">Research</sl-button>
+            <sl-button type="text" href="#actions" class="nav-link">Actions</sl-button>
+            <sl-button type="text" href="#stories" class="nav-link">Stories</sl-button>
+        </nav>
+
+        <div class="content">
+            <h1 class="main-heading">Slow Down</h1>
+            <p class="description">
+                The fast fashion industry is notorious for its substantial environmental footprint and linked-excessive labor practices. 
+                We are in a climate crisis that is caused by our consumption habits and overspending on brands and companies that do not take into consideration the environment or sustainable actions. 
+            </p>
+        </div>
+    </section>
+
+    <!-- What is Fast Fashion Section -->
+    <section id="fast-fashion" class="fast-fashion-section">
+        <div class="fast-fashion-content">
+            <div class="fast-fashion-text">
+                <h2 class="section-title">What is Fast Fashion?</h2>
+                <p>Fast Fashion is the relentless production of cheap low-quality garments that follows popular styles of bigger name brands. Today this phenomenon touches everyone and at any age. E-commerce brands like SHEIN, TEMU are major contributors in the wrongdoings of this trend.</p>
+            </div>
+            <div class="fast-fashion-image">
+                <img src="images/fernand-de-canne-2fNMdA6a5ck-unsplash.jpg" alt="Placeholder Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Sections -->
+    <section id="research">
+        <h2 class="section-title">Research</h2>
+        <div class="research-section" style="background-image: url('images/deforestation.jpg');">
+            <div class="research-content">
+                <h3>1. The Environmental Impact</h3>
+                <p>Deforestation and water pollution are common effects of the production of fast-fashion clothing. Ecosystems are being destroyed and livelihoods impacted negatively.</p>
+            </div>
+        </div>
+
+        <div class="research-section" style="background-image: url('images/factory.png');">
+            <div class="research-content">
+                <h3>2. Exploitation of Labor</h3>
+                <p>Garment workers in developing countries often work in hazardous conditions, receiving minimal pay for their long and grueling hours.</p>
+            </div>
+        </div>
+
+        <div class="research-section" style="background-image: url('images/lanfill.jpg');">
+            <div class="research-content">
+                <h3>3. Landfills and Pollution</h3>
+                <p>Millions of tons of clothing are discarded each year, ending up in landfills, releasing harmful chemicals, and contributing to environmental pollution.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Actions Section with Carousel -->
+    <section id="actions" class="carousel-section">
+        <h2 class="section-title">Actions</h2>
+        <div class="carousel-container">
+            <button class="carousel-button prev-button">&#8249;</button>
+            <div class="carousel-wrapper">
+                <div class="carousel" id="actions-carousel">
+                    <div class="carousel-card">
+                        <div class="card-content">
+                            <div class="card-text">
+                                <h3>Shop second-hand</h3>
+                                <p>As a means to curb the excessive production and consumerism thrift shopping is a solution to curb the negative impact of fast-fashion. There are outlets that specialize in second life clothing which are garments that are still in good condition that could be bought and used for another long period of time.</p>
+                            </div>
+                            <div class="card-image">
+                                <img src="images/fashion-show-catwalk-runway-show-event-backstage-2023-11-27-05-01-41-utc.jpg" alt="Placeholder Image">
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card 1-->
+                    <div class="carousel-card">
+                        <div class="card-content">
+                            <div class="card-text">
+                                <h3>Change your habits</h3>
+                                <p>Instead of going for the cheapest option when browsing through online websites for clothes adopt responsible consumption habits like the five R's: 
+                                    1. Refuse: Learn to say 'No' to purchase impulses.
+                                    2. Reduce: Adopt a lean mindset on the amount you buy and the size of your closet
+                                    3. Reuse: Learn to wear a clothing until the very end of its lifetime, and even if they become unwearable turn them into other objects, toys, quilts, etc.
+                                    4. Repair: Stitching and sewing is always a good option to avoid throwing away a piece that just has minor damages.
+                                    5. Recycle: There are platforms now that are strictly for selling old clothes that you could take advantage of.</p>
+                            </div>
+                            <div class="card-image">
+                                <img src="images/afro-american-stylist-sewing-all-night-long-and-fe-2023-11-27-04-58-06-utc.jpg" alt="Placeholder Image">
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card 2-->
+                    <div class="carousel-card">
+                        <div class="card-content">
+                            <div class="card-text">
+                                <h3>Research and look for sustainable materials</h3>
+                                <p>Sustainable fabrics have the least to no amount of carbon footprint. Researching on the components of the garment is good practice to counter fast-fashion. 
+                                    Materials like organic bamboo linen, hemp, or recycled cotton are a few alternatives to the toxic materials often found in fast-fashion garments.</p>
+                            </div>
+                            <div class="card-image">
+                                <img src="images/harper-sunday-0FiKFe4Y6L0-unsplash.jpg" alt="Placeholder Image">
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card 3-->
+                </div>
+            </div>
+            <button class="carousel-button next-button">&#8250;</button>
+        </div>
+    </section>
+
+    <!-- Stories Section with Carousel -->
+    <section id="stories" class="carousel-section">
+        <h2 class="section-title">Stories</h2>
+        <div class="carousel-container">
+            <button class="carousel-button prev-button">&#8249;</button>
+            <div class="carousel-wrapper">
+                <div class="carousel" id="stories-carousel">
+                    <div class="carousel-card">
+                        <div class="card-content">
+                            <div class="card-text">
+                                <h3>Meet Emma</h3>
+                                <p>Emma is a 25 year old Business Management Student at University of Mauritius. She was fed up of seeing landfills next to her home with piles of clothes being trashed literally every month. 
+                                        So, as a way to fight back against this phenomenon she decided that she would take actions in her own hands and created a platform via social media application, Instagram to start selling old clothes.
+                                        She does not just sell her own clothes but also encourages her friends to create their own page to sell their clothes online. At the same time this can generate money for them, but also sensitize people on the benefits of thrifting and the circular economy.</p>
+                            </div>
+                            <div class="card-image">
+                                <img src="images/leyli-nova-gd0qpyteVFY-unsplash.jpg" alt="Placeholder Image">
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card 1-->
+                    <div class="carousel-card">
+                        <div class="card-content">
+                            <div class="card-text">
+                                <h3>Marchicose</h3>
+                                <p>This is what Marchicose in the south of Mauritius looks like presently. There are concerns of potential water pollution hazards being caused by the landfill because of the nearby river that could be contaminated. Several locals have taken action to try and stop any more waste to be dumped in this landfill.
+                                    Other organizations have expressed their interest to participate in a mass recycling action to prevent any further harm from being caused and also reduce the amount of waste that is being dumped at this site every day.
+                                </p>
+                            </div>
+                            <div class="card-image">
+                                <img src="images/lanfill.jpg" alt="Placeholder Image">
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card 2-->
+                    <div class="carousel-card">
+                        <div class="card-content">
+                            <div class="card-text">
+                                <h3>Kot Piale</h3>
+                                <p>Kot Piale is a local business that specializes in creating objects and clothing using recycled materials. It was established in 2015 by two sisters, Karuna and Melissa Veerapen.
+                                    Their passions, Recycling and Mother Nature, they believe that everything can be reused if not most and that we should tackle the issues of climate change and sustainability as
+                                    a united front, with the help of local authorities and communities all together. 
+                                </p>
+                            </div>
+                            <div class="card-image">
+                                <img src="images/kotpiale.png" alt="Placeholder Image">
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card 3-->
+                </div>
+            </div>
+            <button class="carousel-button next-button">&#8250;</button>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>

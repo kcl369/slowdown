@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Consolas';
+    src: url('./fonts/consolab.ttf');
+    font-style: bold;
+    font-family: 'Encoded Sans';
+    src: url('./fonts/EncodeSans_Expanded-Black.ttf');
+    font-style: BL;
+    font-family:'Encoded Sans';
+    src: url('./fonts/EncodeSans_Expanded-Bold.ttf');
+    font-style: Bold;
+    font-family: 'Encoded Sans';
+    src: url('./fonts/EncodeSans_Expanded-SemiBold.ttf');
+    font-style: SemiBold;
+}
+
+body {
+    
+    color: #333;
+    scroll-behavior: smooth;
+    background-color: #f5f5f5;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('images/red-shirt.png') no-repeat center center / cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.navbar {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: 'Encoded Sans';
+    font-style: Bold;
+    font-weight: bold;
+    transition: color 0.3s ease;
+} 
+
+.nav-link::part(base) {
+    background: none;
+    border: none;
+    box-shadow: none;
+    color: #ffffff; /* Initial color for navbar links */
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0;
+}
+
+.nav-link:hover::part(base) {
+    color: #ffeea8; /* Change color on hover */
+}
+
+.content {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.main-heading {
+    font-size: 8rem;
+    font-family: 'Encoded Sans';
+    font-style: SemiBold;
+    font-weight: bold;
+    letter-spacing: 2px;
+    opacity: 0.9;
+}
+
+.description {
+    color: #ffffff;
+    position: relative;
+    background-color: rgba(57, 35, 35, 0.407);
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-family: 'Consolas';
+    font-style: bold;
+    max-width: 100%;
+    line-height: 1.5;
+    border-radius: 10px;
+    align-content: center;
+}
+
+.scroll-indicator {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    opacity: 0.8;
+    cursor: pointer;
+    animation: bounce 2s infinite;
+    z-index: 1000;
+    color: white;
+    mix-blend-mode: difference;
+}
+
+.fast-fashion-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1024px;
+    padding: 40px;
+    background: #fff;
+    color: #333;
+}
+
+.fast-fashion-content {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fast-fashion-text {
+    width: 60%;
+    padding-right: 20px;
+    font-size: 1.2rem;
+}
+
+.fast-fashion-image {
+    width: 70%;
+    height: 100%;
+    text-align: right;
+}
+
+.fast-fashion-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.section-title {
+    font-family: 'Encoded Sans';
+    font-style: BL;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #6b0000;
+    font-weight: bold;
+}
+
+/* Center-align all other section titles */
+#research .section-title,
+#actions .section-title,
+#stories .section-title {
+    text-align: center;
+    font-family:'Encoded Sans';
+    font-style: Bold;
+}
+
+.research-section {
+    position: relative;
+    padding: 80px 20px;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.research-content {
+    background: rgba(0, 0, 0, 0.376);
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.research-section h3 {
+    font-family:'Encoded Sans';
+    font-style:Bold;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.research-section p {
+    font-family: 'Consolas';
+    font-style: bold;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.carousel-section {
+    height: 1024px;
+    padding: 60px;
+    text-align: center;
+    background: #fff;
+    color: #333;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.carousel-wrapper {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.carousel-card {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.card-text {
+    font-family: 'Consolas';
+    font-style: bold;
+    width: 50%;
+    padding: 20px;
+    align-items: center;
+}
+
+.card-image {
+    width: 50%;
+    text-align: right;
+}
+
+.card-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+
+/* SVG Animations */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
